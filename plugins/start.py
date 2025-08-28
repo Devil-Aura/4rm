@@ -33,14 +33,14 @@ async def start(client, message):
     await asyncio.sleep(2)
     await loading_sticker_message.delete()
     
-    text = f"""Hello {message.from_user.mention} \n\n➻ This Is An Advanced And Yet Powerful Rename Bot.\n\n➻ Using This Bot You Can Rename And Change Thumbnail Of Your Files.\n\n➻ You Can Also Convert Video To File Aɴᴅ File To Video.\n\n➻ This Bot Also Supports Custom Thumbnail And Custom Caption.\n\n<b>Bot Is Made By @Madflix_Bots</b>"""
+    text = f"""Hello {message.from_user.mention} \n\n➻ This Is An Advanced And Yet Powerful Rename Bot.\n\n➻ Using This Bot You Can Rename And Change Thumbnail Of Your Files.\n\n➻ You Can Also Convert Video To File Aɴᴅ File To Video.\n\n➻ This Bot Also Supports Custom Thumbnail And Custom Caption.\n\n<b>Bot Is Made By @World_Fastest_Bots</b>"""
     
     button = InlineKeyboardMarkup([
-        [InlineKeyboardButton("📢 Updates", url="https://t.me/Madflix_Bots"),
-        InlineKeyboardButton("💬 Support", url="https://t.me/MadflixBots_Support")],
+        [InlineKeyboardButton("📢 Updates", url="https://t.me/World_Fastest_Bots"),
+        InlineKeyboardButton("💬 Support", url="https://t.me/World_Fastest_Bots")],
         [InlineKeyboardButton("🛠️ Help", callback_data='help'),
         InlineKeyboardButton("❤️‍🩹 About", callback_data='about')],
-        [InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url="https://t.me/MadflixOfficials")]
+        [InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url="https://t.me/World_Fastest_Bots")]
         ])
     
     await message.reply_photo(
@@ -65,7 +65,7 @@ async def send_doc(client, message):
         except UserNotParticipant:
             _newus = find_one(message.from_user.id)
             user = _newus["usertype"]
-            await message.reply_text("<b>Hello Dear \n\nYou Need To Join In My Channel To Use Me\n\nKindly Please Join Channel</b>",
+            await message.reply_text("<b>Hello Dear \n\nYou Need To Join In My Channel To Use Me\n\nKindly Please Join Channel @World_Fastest_Bots.</b>",
                                      reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup([
                                          [InlineKeyboardButton("🔺 Update Channel 🔺", url=f"https://t.me/{FORCE_SUBS}")]
